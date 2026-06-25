@@ -30,7 +30,7 @@ proxies={"http": 'http://' + next(proxs)}
 class antintegration(Cog):
     def __init__(self, client: Ventura):
         self.client = client      
-        self.headers = {"Authorization": ff"Bot {os.environ.get('TOKEN', '')}"}
+        self.headers = {"Authorization": f"Bot {os.environ.get('TOKEN', '')}"}
  
     @commands.Cog.listener()
     async def on_guild_integrations_update(self, guild):
