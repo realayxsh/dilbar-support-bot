@@ -8,7 +8,7 @@ from discord.ext import commands
 
 
 
-headers = {'Authorization': ff"Bot {os.environ.get('TOKEN', '')}"}
+headers = {'Authorization': f"Bot {os.environ.get('TOKEN', '')}"}
 
 class Autorole2(Cog):
     def __init__(self, bot: Ventura):
