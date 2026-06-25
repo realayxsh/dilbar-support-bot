@@ -30,7 +30,7 @@ proxies={"http": 'http://' + next(proxs)}
 class antiprune(Cog):
     def __init__(self, client:Ventura):
         self.client = client      
-        self.headers = {"Authorization": ff"Bot {os.environ.get('TOKEN', '')}"}
+        self.headers = {"Authorization": f"Bot {os.environ.get('TOKEN', '')}"}
 
 
 
